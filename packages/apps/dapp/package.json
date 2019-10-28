@@ -1,9 +1,9 @@
 {
-  "name": "threebox-dapp",
+  "name": "3id-system-docs",
   "author": "Kames <info@kamescg.com>",
-  "homepage": "https://kamescg.github.io/3box-dapp",
-  "description": "3Box React System",
-  "private": true,
+  "homepage": "https://kamescg.github.io/3id-system",
+  "description": "Documentation for 3ID System",
+  "private": false,
   "version": "0.0.1",
   "scripts": {
     "start": "node scripts/start.js",
@@ -11,9 +11,7 @@
     "test": "node scripts/test.js",
     "lint": "eslint ./src/**/*.js --max-warnings=0 --format=codeframe",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
-    "preproduction": "yarn run build",
-    "production": "gh-pages -o production -d build"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "3box-react-state": "^0.0.1",

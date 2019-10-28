@@ -1,5 +1,6 @@
 {
   "name": "3id-system",
+  "desription": "3Box React State/Interface Management",
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",

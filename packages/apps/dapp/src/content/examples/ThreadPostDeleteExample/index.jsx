@@ -1,4 +1,4 @@
-import { ThreadJoin } from '3box-react-system'
+import { ThreadPostDelete } from '3box-react-system'
 
 
 const ThreadPostDeleteExample = props => {
@@ -10,7 +10,9 @@ const ThreadPostDeleteExample = props => {
           <Atom.Paragraph>
             Delete a message from a 3Box thread.
           </Atom.Paragraph>
-          {/* <ThreadJoin space='3box' threadName='thread' /> */}
+          <Atom.Box>
+            <ThreadPostDelete space='web3' threadName='comments' postId='test' />
+          </Atom.Box>
         </Atom.Flex>
         <Atom.Flex flex={3} width={'60%'}>
           <Atom.Box gradient='gray' sx={{ p: 3, px: 4, width: '100%' }}>

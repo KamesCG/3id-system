@@ -28,21 +28,22 @@ import {
 const featureOne = {
   title: 'Authentication',
   tagline: 'Connect to Etheruem',
-  summary: 'Authenticate with users via the normal wallet interface. Request verifications. Validate identity. Everything that you normally require from a social identity system can easily be handled through a few simple cryptographic signatures.',
-  image: 'https://image.flaticon.com/icons/svg/1673/1673590.svg',
+  summary: 'Support social identity and basic reputation.',
+  image: 'https://3box.io/static/media/Profiles.53b79a55.svg',
 
 }
 const featureTwo = {
   title: 'Storage',
   tagline: 'Store Data in the Decentralized Cloud',
-  summary: 'Included with every 3Box decentralized identity is public and private Storage. Minimize application database costs and give privacy back to users. A win/win for everyone. Storage is just the beginning. Content management systems, shared team accounts, and much more is possible.',
-  image: 'https://image.flaticon.com/icons/svg/1673/1673612.svg',
+  summary: 'Store user data in a private database just for your app.',
+  image: 'https://3box.io/static/media/Storage.3c2f0d4f.svg',
 }
 const featureThree = {
   title: 'Communication',
   tagline: 'Connect with The World Around You',
-  summary: 'The messaging and thread system included in the 3Box core features is perfect for temporary chat rooms, community curated lists, public profiles status updates, and even backend notifications systems between decentraized identities.',
-  image: 'https://image.flaticon.com/icons/svg/1673/1673579.svg',
+  summary: 'Add decentralized chat, messaging, and commenting.',
+  image: 'https://3box.io/static/media/Messaging.63339734.svg',
+  
 }
 
 /* --- Component --- */
@@ -52,7 +53,8 @@ const Home = props =>
       layout='showcase'
       variants={['large', 'centered']}
       sx={{
-        p: 3
+        p: 3,
+        py: 6,
       }}
       sxTitle={{
         fontWeight: 700
@@ -68,7 +70,7 @@ const Home = props =>
     />
 
     {/* Features */}
-    <Atom.Container my={5}>
+    {/* <Atom.Container my={5}>
       <Atom.Flex sx={{}}>
         <Molecule.Card
           {...featureOne}
@@ -88,7 +90,9 @@ const Home = props =>
           sxImage={{ maxWidth: 55, p: 2, pr: 3 }}
         />
       </Atom.Flex>
-    </Atom.Container>
+    </Atom.Container> */}
+
+    <Atom.Span variants={['tag']} effects={['white']}>A community initiative to help enable adpotion of 3Box.</Atom.Span>
 
     <InitProviderExample />
     <EnableEthereumExample />
@@ -124,12 +128,12 @@ const Home = props =>
     <ThreadPostPublishExample />
     <ThreadPostDeleteExample />
 
-    <Atom.Heading xxl heavy>Rendering</Atom.Heading>
+    {/* <Atom.Heading xxl heavy>Rendering</Atom.Heading>
     <Atom.Paragraph>
       Simplified Data Rendering and Content References
     </Atom.Paragraph>
     <StorageRenderExample />
-    <ReferenceExample />
+    <ReferenceExample /> */}
   </Site>
 
 export default Home

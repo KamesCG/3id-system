@@ -17,6 +17,7 @@ export { default as ProfileSmall } from './api/ProfileSmall'
 export { default as Messaging } from './api/Messaging'
 export { default as MessagePost } from './api/MessagePost'
 export { default as MessageDelete } from './api/MessageDelete'
+export { default as ThreadPostDelete } from './api/ThreadPostDelete'
 export { default as ThreadJoin } from './api/ThreadJoin'
 export { default as ThreadListen } from './api/ThreadListen'
 

@@ -1,11 +1,16 @@
 # 3ID System
 ### 3Box React State/Interface Management
 
+![image](https://imgur.com/zUQDDJQ.png)
 
 ### Lerna
 Install: `yarn`
+
 Setup Everything: `yarn $`
+
 Watch Directories: `yarn watch`
+
+More developer documentation coming soon.
 
 
 ### Examples
